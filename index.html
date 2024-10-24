@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Aura</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo3.png" alt="" />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#" id="menuToggle"
+              ><i class="bx bx-menu"></i><span class="plus-text">Plus</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="nouveau-box">
+        <div class="nouveau-text">N e w</div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <div class="homepage">
+        <h2>Coming Soon</h2>
+        <p>
+          AURA the new distributor of international optical and sunglasses
+          brands in Algeria
+        </p>
+      </div>
+    </div>
+    <div class="SocialMedia">
+      <i class="bx bxl-facebook-circle"></i>
+      <i class="bx bxl-instagram"></i>
+      <i class="bx bxl-tiktok"></i>
+      <i class="bx bxl-whatsapp"></i>
+    </div>
+    <div class="sliding-menu" id="slidingMenu">
+      <button class="close-btn" id="closeBtn">
+        <i class="bx bx-x"></i>
+        <span class="close-text">CLOSE</span>
+      </button>
+      <div class="about">
+        <h2>About Us</h2>
+        <p>
+          AURA is a new distributor of international optical and sunglasses
+          brands in Algeria. Our goal is to offer high-quality eyewear with
+          stylish designs, combining both fonctionality and fashion for
+          opticians and consumers. we are committed to providing trusted brands
+          and reliable service through a strong distribution network across the
+          country.
+        </p>
+      </div>
+      <!-- Add more content as needed -->
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <p><strong>CALL CENTER</strong> +213 561 790 702</p>
+        <p><strong>CALL CENTER</strong> +213 561 791 105</p>
+        <p><strong>ALGIERS</strong> +213 561 790 228 / 561 791 019</p>
+        <p><strong>ANNABA</strong> +213 561 790 074</p>
+        <p><strong>CONSTANTINE - SÉTIF</strong> +213 560 896 181</p>
+        <p><strong>TIZI OUZOU - BÉJAÏA</strong> +213 560 024 737</p>
+        <p><strong>ORAN</strong> +213 560 897 203</p>
+        <p><strong>TLEMCEN</strong> +213 560 892 372</p>
+        <p><strong>TIARET</strong> +213 560 024 734</p>
+      </div>
+    </div>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const closeBtn = document.getElementById("closeBtn");
+      const slidingMenu = document.getElementById("slidingMenu");
+
+      menuToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        slidingMenu.classList.add("open");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        slidingMenu.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
