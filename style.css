@@ -140,22 +140,35 @@ body {
   width: 500px;
 }
 .SocialMedia {
-  position: fixed; /* Change from absolute to fixed */
-  right: 0;
-  top: 40%; /* Position the top edge at the middle of the viewport */
+  position: fixed;
+  right: 20px; /* Add some spacing from the viewport edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center; /* Changed from space-evenly since items are stacked */
   align-items: center;
   flex-direction: column;
+  gap: 15px; /* Better than relying on space-evenly for consistent spacing */
   width: 40px;
   height: 200px;
-  background-color: #131b3d85;
+  background-color: rgba(19, 27, 61, 0.5); /* More readable rgba format */
   font-size: 25px;
   color: #ffffff;
   border-radius: 25px;
+  padding: 15px 0; /* Add padding for better spacing */
+  z-index: 999; /* Ensure it stays above other content */
+  transition: all 0.3s ease; /* Smooth transitions */
 }
-.SocialMedia i:hover {
+
+.SocialMedia a {
+  color: #ffffff; /* Explicitly set link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.SocialMedia a:hover {
   color: #394ca0;
+  transform: scale(1.1); /* Slight grow effect on hover */
 }
 .sliding-menu {
   position: fixed;
@@ -247,7 +260,15 @@ body {
   font-size: 0.9rem;
   color: #ffffff;
 }
-
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #1b96e2;
+}
+.contact-info .contact {
+  margin-bottom: 40px;
 /* .contact-info strong {
   font-weight: normal;
 } */
